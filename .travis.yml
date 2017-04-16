@@ -16,6 +16,7 @@ script:
   - ng build --prod
 
 after_success:
+  - npm run precache
   - firebase deploy --token 1/HUTePXFna4hbfwGI6Z8S7BWjYGf3e9PNxn8dllpAUd8
 
 notifications:
